@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE AvatarRule SYSTEM "http://www.cs.helsinki.fi/u/saada/kurssit/javalabra/dtd/avatarrule.dtd">
+<AvatarRule>
+	<Attributes>
+		<Attribute>
+			<Name>testi</Name>
+		</Attribute>
+		<Attribute>
+			<Name>testi1</Name>
+		</Attribute>
+	</Attributes>
+	<Skills>
+		<Skill>
+			<Name>testo</Name>
+		</Skill>
+	</Skills>
+	<Races>
+		<Race>
+			<Name>teste00</Name>
+		</Race>
+		<Race>
+			<Name>tet</Name>
+		</Race>
+		<Race>
+			<Name>etet</Name>
+		</Race>
+	</Races>
+</AvatarRule>

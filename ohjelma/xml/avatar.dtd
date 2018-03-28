@@ -1,0 +1,11 @@
+<!ELEMENT Avatar (Rule, Attributes, Skills, Information)>
+<!ELEMENT Rule (#PCDATA)>
+<!ELEMENT Attributes (Attribute*)>
+<!ELEMENT Attribute (Name, Value)>
+<!ELEMENT Skills (Skill*)>
+<!ELEMENT Skill (Name, Value)>
+<!ELEMENT Information (Name, Player, Race)>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Value (#PCDATA)>
+<!ELEMENT Player (#PCDATA)>
+<!ELEMENT Race (#PCDATA)>

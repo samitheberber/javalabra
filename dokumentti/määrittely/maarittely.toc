@@ -1,0 +1,10 @@
+\select@language {finnish}
+\contentsline {section}{\numberline {1}Ohjelman tarkoitus ja yleiskuvaus}{1}
+\contentsline {subsection}{\numberline {1.1}K\"aytt\"otapaukset}{1}
+\contentsline {section}{\numberline {2}Rajoitukset}{1}
+\contentsline {section}{\numberline {3}K\"asitelt\"av\"an datan kuvaus}{1}
+\contentsline {section}{\numberline {4}Tiedonkulun kuvaus}{2}
+\contentsline {section}{\numberline {5}Toimintojen kuvaus}{2}
+\contentsline {section}{\numberline {6}K\"aytt\"aytymisen kuvaus}{2}
+\contentsline {subsection}{\numberline {6.1}Lyhyt k\"aytt\"oohje}{3}
+\contentsline {subsection}{\numberline {6.2}K\"aytt\"oliittym\"akaaviot}{3}

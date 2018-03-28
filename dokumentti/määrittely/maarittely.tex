@@ -1,0 +1,100 @@
+\documentclass[gradu,emptyfirstpagenumber]{tktltiki}
+\usepackage{url}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Hahmogeneraattori - Määrittelydokumentti}
+\author{Sami Saada - saada@cs.helsinki.fi}
+\date{\today}
+\level{Ohjelmoinnin harjoitustyö}
+
+\maketitle
+
+\doublespacing
+
+\faculty{Matemaattis-luonnontieteellinen}
+\department{Tietojenkäsittelytieteen laitos}
+\depositeplace{}
+\additionalinformation{}
+\numberofpagesinformation{\numberofpages\ sivua}
+\classification{}
+\keywords{Ohjelmoinnin harjoitustyö, Hahmogeneraattori}
+
+\begin{abstract}
+Ohjelmoinnin harjoitustyön, jonka aiheena on hahmogeneraattori, määrritelydokumentti.
+\end{abstract}
+
+\mytableofcontents
+
+\section{Ohjelman tarkoitus ja yleiskuvaus}
+
+Ohjelmani on hahmogeneraattori, jota käytetään roolipelihahmojen luontiin. Ohjelmaa voi käyttää pelinjohtajat sekä pelaajat. Pelinjohtaja voi etukäteen tehdä pelaajille hahmosäännöt tai hahmopohjat, joita pelaajat käyttävät luodessaan omat hahmonsa peliin.
+
+\subsection{Käyttötapaukset}
+
+Pelinjohtaja luo hahmosäännön. Pelinjohtaja tarkistaa oman hahmosääntönsä toimivuutta. Pelinjohtaja luo pelaajille valmiit hahmot.
+
+Pelaaja luo oman hahmonsa valmiin hahmosäännön pohjalta. Pelaaja tekee valmiista hahmosta henkilökohtaisen.
+
+\section{Rajoitukset}
+
+Hahmosääntöjen ja hahmojen määrä on rajallinen levytilan kokoon nähden.
+
+\section{Käsiteltävän datan kuvaus}
+
+Hahmogeneraattori käsittelee hahmojen henkilökohtaisia ominaisuuksia, joita ovat nimi, sukupuoli, luokka ja pelaaja. Hahmoilla on perusominaisuudet ja niiden numeroarvo, näitä ominaisuuksia ovat mm. voima ja ketteryys. Hahmoilla on taitoja ja taidoilla on jokin taso, esim. taikominen tasolla 2. Nämä kaikki tiedot määritellään hahmosäännöissä.
+
+\section{Tiedonkulun kuvaus}
+
+Ohjelmassa liikkuu pääasiassa kahdenlaista tietoa. Toinen on käyttäjän syöttämä tieto ja toinen on xml-dokumenteista saatu tieto. Kaikki tieto varastoidaan xml-dokumentteihin.
+
+Pelinjohtaja voi luoda itse hahmosäännön ohjelmalla ja tallentaa sen xml-dokumenttiin. Vaihtoehtoisesti hän voi luoda xml-dokumentin tekstieditorilla. Pelaaja voi luoda hahmon ohjelmalla ja tallentaa sen xml-dokumenttiin, jolloin hahmo täyttää annetun hahmosäännön. Vaihtoehtoisesti pelaaja voi luoda hahmon xml-dokumentin tekstieditorilla ja pitää itse huolen siitä, että hahmo toteuttaa valitun hahmosäännön. Tallentamattomat hahmot säilyvät muistissa ohjelman suoritusajan ellei niitä sulje.
+
+Tiedot syötetään käsin tai arpomalla. Ohjelma kertoo suoritusaikaisen tilanteen. Tilannetta ei tallenneta levylle ilman käyttäjän suostumusta. Tallentaessa käyttäjä voi valita minne tieto tallennetaan, muutoin tieto tallennetaan oletussijaintiin, joka on ohjelman sijainti.
+
+\section{Toimintojen kuvaus}
+
+Tärkeimmät toiminnot ovat hahmosääntöjen luonti, hahmojen luonti, tietojen tallennus ja lataaminen sekä ohjelmasta poistuminen.
+
+\section{Käyttäytymisen kuvaus}
+
+Ohjelmaa käytetään graafisen käyttöliittymän kautta. Vaihtoehtoisesti kaikkiin muutettaviin tietoihin pääsee käsiksi xml-dokumenttien kautta ohjelman ollessa suljettuna. Ohjelma ilmoittaa sen tekemistä muutoksista tarvittaessa. Ohjelma ei tee muutoksia ilman käyttäjän suostumusta.
+
+\subsection{Lyhyt käyttöohje}
+
+Hahmosäännöt luodaan Hahmosäännöt-valikosta valitsemalla Uusi sääntö. Tämän jälkeen täytetään tiedot sopiviksi. Sääntö tallennetaan valitsemalla Hahmosäännöt-valikosta Tallenna sääntö. Säännön lataaminen onnistuu valitsemalla samaisesta valikosta Lataa sääntö.
+
+Hahmo luodaan Hahmo-valikosta valitsemalla Uusi hahmo. Ohjelma kysyy, mitä hahmosääntöä käytetään ja käyttäjä valitsee haluamansa säännön. Käyttäjä syöttää hahmosäännön mahdollistamat tiedot. Hahmo tallennetaan Hahmo-valikosta valitsemalla Tallenna hahmo. Hahmoja voi ladata muokattavaksi valitsemalla samaisesta valikosta Lataa hahmo.
+
+\subsection{Käyttöliittymäkaaviot}
+
+\begin{figure}[htb]
+\centering \includegraphics{aloitus.png}
+\caption{Perusnäkymä} \label{kaavio}
+\end{figure}
+
+\begin{figure}[htb]
+\centering \includegraphics{saanto.png}
+\caption{Hahmosääntö-valikko} \label{kaavio4}
+\end{figure}
+
+\begin{figure}[htb]
+\centering \includegraphics{saanto2.png}
+\caption{Hahmosäännön luonti tai muokkaus} \label{kaavio5}
+\end{figure}
+
+\begin{figure}[htb]
+\centering \includegraphics{hahmo.png}
+\caption{Hahmo-valikko} \label{kaavio6}
+\end{figure}
+
+\begin{figure}[htb]
+\centering \includegraphics{hahmo2.png}
+\caption{Hahmon luonti tai muokkaus} \label{kaavio7}
+\end{figure}
+
+\lastpage
+\appendices
+
+\end{document}

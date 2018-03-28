@@ -1,0 +1,8 @@
+<!ELEMENT AvatarRule (Attributes, Skills, Races)>
+<!ELEMENT Attributes (Attribute*)>
+<!ELEMENT Attribute (Name)>
+<!ELEMENT Skills (Skill*)>
+<!ELEMENT Skill (Name)>
+<!ELEMENT Races (Race*)>
+<!ELEMENT Race (Name)>
+<!ELEMENT Name (#PCDATA)>

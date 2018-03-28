@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Avatar SYSTEM "http://www.cs.helsinki.fi/u/saada/kurssit/javalabra/dtd/avatar.dtd">
+<Avatar>
+	<Rule>sääntö1.xml</Rule>
+	<Attributes>
+		<Attribute>
+			<Name>testi</Name>
+			<Value>1</Value>
+		</Attribute>
+		<Attribute>
+			<Name>testi1</Name>
+			<Value>0</Value>
+		</Attribute>
+	</Attributes>
+	<Skills>
+	</Skills>
+	<Information>
+		<Name>sami</Name>
+		<Player>stb</Player>
+		<Race>tet</Race>
+	</Information>
+</Avatar>

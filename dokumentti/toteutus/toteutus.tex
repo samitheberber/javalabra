@@ -1,0 +1,98 @@
+\documentclass[gradu,emptyfirstpagenumber]{tktltiki}
+\usepackage{url}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Avatar Generator - Toteutusdokumentti}
+\author{Sami Saada - saada@cs.helsinki.fi}
+\date{\today}
+\level{Ohjelmoinnin harjoitustyö (Java)}
+
+\maketitle
+
+\doublespacing
+
+\faculty{Matemaattis-luonnontieteellinen}
+\department{Tietojenkäsittelytieteen laitos}
+\depositeplace{}
+\additionalinformation{}
+\numberofpagesinformation{\numberofpages\ sivua}
+\classification{}
+\keywords{Ohjelmoinnin harjoitustyö, Hahmogeneraattori}
+
+\begin{abstract}
+Ohjelmoinnin harjoitustyön, jonka aiheena on hahmogeneraattori, toteutusdokumentti. Dokumentti sisältää UML-kaaviot harjoitustyöstä.
+\end{abstract}
+
+\mytableofcontents
+
+\section{Käyttöohje}
+
+\subsection{Lyhyt esittely ohjelmasta}
+
+Ohjelmaa käytetään roolipelaamisen apuna. Ohjelmalla voi luoda hahmosääntöjä peliin. Näiden sääntöjen pohjalta pelaajat luovat hahmonsa. Lisää tietoa määrittelydokumentista.
+
+\subsection{Ajo-ohje}
+
+Aja komento: java -jar AvatarGenerator.jar
+
+\subsection{Laitteistovaatimukset}
+
+Tietokone, joka pyörittää SUNin Javaa. Avoimilla ratkaisuilla voi toimia, muttei ole testattu. Ohjelmaa on testattu yliopiston melkki-palvelimella java 1.5.0:lla.
+
+\subsection{Ohjelman toiminnot}
+
+Lue määrittelydokumentin käyttötapaukset.
+
+\subsection{Syöttötiedot}
+
+Syöttötiedot kirjoitetaan itse. Osa syötteistä on tarkoin muotoiltu.
+
+\subsection{Tulostiedot}
+
+Ohjelma tulostaa pyydetyn tilanteen. Tiedot tulostetaan aina, kun niitä tarvitaan.
+
+\subsection{Ohjelman rajoitukset}
+
+Tallennusmuoto on XML. Käsiteltäviä hahmoja ja hahmosääntöjä on vain yksi kerrallaan.
+
+\subsection{Virheilmoitukset}
+
+Väärä tiedostomuoto: Korjaa tiedostomuoto, anettava tiedosto.xml, syötä tiedosto.
+
+
+\section{Ohjelman toiminta- ka rakennekuvaus}
+
+\subsection{Yleiskuvaus}
+
+Ohjelma käyttää XML:ää tallennusmuotona. Minua kiinnosti XML:n käyttö Javassa. Valmiita dokumentteja pystyy kätevästi katsomaan esim. selaimessa.
+
+\subsection{Luokkarakenne}
+
+\subsection[Luokkien kuvaus]
+
+Katso javadoc.
+
+\subsection{Ohjelman toiminta}
+
+Suunnitteludokumentissa on sekvenssikaavio (Suunnittelu/sekvenssikaavio.png). Käyttöliittymä keskustelee hahmosäännön kanssa sääntö luodessa. Sääntö tallennetaan käyttämällä XML-luokkaa. Hahmo-luokka sisällyttää säännön itseensä ja tekee siitä tarkistukset käyttäen sääntöluokkia. Hahmo tallennetaan XML-luokan avulla.
+
+\subsection{Ohjeet ohjelman rajoitusten poistamiseksi}
+
+Ohjelmoi GUI. Koodi ja javadoc ovat liitteenä.
+
+\subsection{Parannusehdotuksia}
+
+Graafinen käyttöliittymä olisi merkittävä parannus. Muuten generaattori toimii moitteettomasti.
+
+
+\section{Testauksen kuvaus}
+
+Ajotestaus. Testasin säännöllisesti ajamalla useaan otteeseen ohjelmaa. Katsoin hajoaako ohjelma. Pariin kertaan tuli poikkeuksia, jotka korjasin. Lopputulos on se, että ohjelma toimii.
+
+
+\lastpage
+\appendices
+
+\end{document}

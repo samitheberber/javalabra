@@ -1,0 +1,40 @@
+\documentclass[gradu,emptyfirstpagenumber]{tktltiki}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[finnish]{babel}
+\usepackage{times}
+
+\begin{document}
+
+\title{MÃ¤Ã¤rittelydokumentti}
+\author{Sami Saada - saada@cs.helsinki.fi}
+
+\pagestyle{headings}
+
+\maketitle
+
+\chapter{Ohjelman tarkoitus ja yleiskuvaus}
+
+Ohjelmani on hahmogeneraattori, jota kÃ¤ytetÃ¤Ã¤n roolipelihahmojen luontiin ja niillÃ¤ pelaamiseen. Ohjelmaa voi kÃ¤yttÃ¤Ã¤ pelinjohtajat sekÃ¤ pelaajat. Pelinjohtaja voi etukÃ¤teen tehdÃ¤ pelaajille hahmosÃ¤Ã¤nnÃ¶t tai hahmopohjat, joita pelaajat kÃ¤yttÃ¤vÃ¤t luodessaan omat hahmonsa peliin. Valmiilla hahmolla voi pelata.
+
+\subsection{KÃ¤yttÃ¶tapaukset}
+
+Pelinjohtaja tarkistaa oman hahmosÃ¤Ã¤ntÃ¶nsÃ¤ toimivuutta. Pelinjohtaja luo pelaajille valmiit hahmot. Pelinjohtaja luo ei-pelaajahahmon.
+
+Pelaaja luo oman hahmonsa valmiin hahmosÃ¤Ã¤nnÃ¶n pohjalta. Pelaaja tekee valmiista hahmosta henkilÃ¶kohtaisen. Pelaaja pelaa hahmollaan. Pelaaja tallentaa hahmon tai lataa pelissÃ¤ olevan hahmon.
+
+\chapter{Rajoitukset}
+
+HahmosÃ¤Ã¤ntÃ¶jen ja hahmojen mÃ¤Ã¤rÃ¤ on rajallinen levytilan kokoon nÃ¤hden. Kerralla kÃ¤siteltÃ¤vien hahmojen mÃ¤Ã¤rÃ¤n rajaan 6 pelaajaan.
+
+\chapter{dokkarin suunnittelua *poista*}
+
+HarjoitustyÃ¶n aiheena on hahmogeneraattori. Hahmogeneraattorilla pystyy luomaan hahmotyyppejÃ¤ ja pelaamaan luoduilla hahmoilla.
+
+Hahmoille pystyy luomaan eilaisia ominaisuuksia, joita kuvataan jollakin luvulla. Hahmoilla on erilaisia kykyjÃ¤, joihin vaikuttavat mm. hahmon tausta ja kokemus. Pelattavilla hahmoilla on henkilÃ¶kohtaisia tietoja, kuten hahmon nimi, pelaajan nimi sekÃ¤ hahmon sukupuoli.
+
+Hahmopohjia voi ladata ja tallentaa. MyÃ¶s pelissÃ¤ olevia hahmoja voi ladata ja tallentaa. Tallennustilana toimii massamuistit.
+
+Olennainen osa on hahmosÃ¤Ã¤ntÃ¶jen luonti. HahmosÃ¤Ã¤ntÃ¶ mÃ¤Ã¤rÃ¤Ã¤ sen, millaisia hahmoja voi luoda. HahmosÃ¤Ã¤ntÃ¶jÃ¤ voi ladata ja tallentaa. Tallennustilana toimii massamuistit.
+
+\end{document}
